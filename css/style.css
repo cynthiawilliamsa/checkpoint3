@@ -1,0 +1,71 @@
+#container {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightblue;
+  overflow: hidden;
+  font-family: verdana;
+  text-align: center;
+
+}
+.grass {
+  background: url('../img/grass.svg');
+  z-index: 1;  
+}
+.ground {
+  position: relative;
+  top: 67%;
+  background-color: darkgreen;
+  height: 30%; 
+}
+.tree {
+  position: fixed; 
+  width: auto; 
+  top: 20%;
+  z-index: 1;
+}
+#dog {
+  position:fixed;
+  width: auto;
+  top: 53%;
+  left: 65%;
+  height: 40%;  
+  z-index: 1;
+}
+.bowl {
+  position: fixed;
+  width: auto;
+  top: 83%;
+  left: 60%;
+  z-index: 1;
+
+}
+
+#score_help {
+  position: relative;
+  top: 15%;
+  text-align: center;
+  font-size: 25px;
+  font-family: verdana;
+  
+}
+
+body, html {
+    width: 960;
+    height: 100%;
+}
+div.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+div.exploding {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('../img/bone1.png');
+    z-index: 1;
+    background-repeat: no-repeat;
+}
