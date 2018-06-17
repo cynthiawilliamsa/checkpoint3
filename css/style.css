@@ -1,8 +1,7 @@
 #container {
-  position:relative;
+  position:fixed;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
   background-color: lightblue;
   overflow: hidden;
   font-family: verdana;
@@ -10,33 +9,81 @@
 
 }
 .grass {
+  position: relative;
   background: url('../img/grass.svg');
+  top: 18%;  
   z-index: 1;  
 }
 .ground {
-  position: relative;
+  position: absolute;
   top: 67%;
-  background-color: darkgreen;
-  height: 30%; 
+  background-color: green;
+  height: 35%; 
+  width: 100%;
 }
 .tree {
   position: fixed; 
   width: auto; 
-  top: 20%;
+  top:  2%; 
   z-index: 1;
+}
+
+.apple {
+  position: absolute;
+}
+
+#apple1 {
+  top: 21%;
+  left: 27%;
+}
+#apple2 {
+  top: 53%;
+  left: 70%;
+}
+#apple3 {
+  top: 33%;
+  left: 55%;
+}
+#apple4 {
+  top: 14%;
+  left: 48%;
+}
+#apple5 {
+  top: 60%;
+  left: 27%;
+}
+#apple6 {
+  top: 20%;
+  left: 65%;
+}
+#apple7 {
+  top: 28%;
+  left: 44%;
+}
+#apple8 {
+  top: 32%;
+  left: 30%;
+}
+#apple9 {
+  top: 42%;
+  left: 18%;
+}
+#apple10 {
+  top: 57%;
+  left: 40%;
 }
 #dog {
   position:fixed;
   width: auto;
-  top: 53%;
-  left: 65%;
-  height: 40%;  
+  top: 50%;
+  left: 69%;
+  height: 38%;  
   z-index: 1;
 }
 .bowl {
   position: fixed;
   width: auto;
-  top: 83%;
+  top: 70%;
   left: 60%;
   z-index: 1;
 
