@@ -113,6 +113,7 @@ div.exploding {
   }  
   
   #tree {
+    display: none;
     position: absolute; 
     left: 5%;
     top:  35%; 
@@ -123,17 +124,18 @@ div.exploding {
     position: aboslute;
     width: 60px;
     top: 75%;
-    left: 58%;
+    left: 38%;
     z-index: 1;
   }
   #dog {
     position:absolute;
-    height: 160px;
-    top: 60%;
-    left: 67%;    
+    height: 200px;
+    top: 50%;
+    left: 40%;    
     z-index: 1;
   }
   .apple {
+    display: none;
     position:fixed;
     width: 40px;
     z-index: 1;
