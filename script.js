@@ -1,41 +1,42 @@
+
 $(document).ready(function () {  
-  var score = $('#score');
-  
+  var score_span = $('#score');  
+  var score = 0;
+  //event handlers//
   $('#dog').on('click', function () {
-    makeBone();
-    // console.log(score++);
+    makeBone(); //runs functions below
+    scoreUpdate();    
   });
   $(".apple").on('click', function () {
-    $(this).hide();
-    clkApple();       
+    $(this).hide(); //hides apple upon click
+    clkApple(); //runs function below
+    scoreUpdate();      
   });
-
-  function makeBone() {
+//functions//
+  function makeBone() { //calculates random location for bone to appear on click event
     var numRand = Math.floor(Math.random() * 501);
     var divsize = 75;
     var posx = (Math.random() * ($('.ground').width() - divsize)).toFixed();
     var posy = (Math.random() * ($('.ground').height() - divsize)).toFixed();
     $newdiv = $("<div class='exploding'></div>").css({
       'left': posx + 'px',
-      'top': posy + 'px'
+      'top': posy + 'px'      
     });
-    $newdiv.appendTo('.ground').delay(500).fadeIn(300, function () {
-      // $newdiv.delay(2000).fadeOut(500);
-      $(this).remove();
-      
-    });
+    score ++; //increment score by one for each bone
+    $newdiv.appendTo('.ground').delay(500).fadeIn(300, function () {      //appends div with bone and then removes immediately
+      $(this).remove();      
+    }); 
   }
-  function clkApple() {
+  function clkApple() { //upon click triggers to fade hidden apple back into screen after delay
     $('.apple').delay(7000).fadeIn(2000);
-    score+=5;
+    score+=5; //increments score of each apple click by 5
+  }  
+  function scoreUpdate() {   //upon respective click updates score.
+    console.log(score); 
+    score_span.text(score);
   }
-  // function shkTree() {
-  //   $('.apple').fadeOut(100, function () {
-  //     $(this).delay(200).show();
-  //   score+=20;
-  // }
-  
 });
+
 
   
 

@@ -1,19 +1,35 @@
+/* Mobile Styles */
+
 #container {
-  position:fixed;
+  position: absolute;
   height: 100%;
-  width: 100%;
+  width: 100%;  
   background-color: lightblue;
   overflow: hidden;
-  font-family: verdana;
+  font-family: verdana;   
+}
+h1, h5 {
   text-align: center;
-
+ 
+}
+#score_help {
+  position: relative;
+  top: 0%;
+  text-align: center;
+  font-size: 30px;
+  font-family: verdana;  
+}
+#cloud {
+  position: absolute;
+  z-index: 1;
+  left: 60%;
+  top:10%;
 }
 .grass {
-  position: relative;
-  background: url('../img/grass.svg');
-  top: 18%;  
-  z-index: 1;  
-}
+  position: fixed; 
+  top: 70%;   
+  z-index: 1; 
+} 
 .ground {
   position: absolute;
   top: 67%;
@@ -21,92 +37,51 @@
   height: 35%; 
   width: 100%;
 }
-.tree {
-  position: fixed; 
-  width: auto; 
-  top:  2%; 
+#tree {
+  position: absolute;   
+  top: 30%; 
+  width: 375px;
   z-index: 1;
 }
-
 .apple {
-  position: absolute;
+  position:fixed;
+  width: 60px;
+  z-index: 1;
 }
-
 #apple1 {
-  top: 21%;
-  left: 27%;
+ top: 375px;
+ left: 160px;
 }
 #apple2 {
-  top: 53%;
-  left: 70%;
+  top: 455px;
+  left: 120px; 
 }
 #apple3 {
-  top: 33%;
-  left: 55%;
+ top: 370px;
+ left: 70px;
 }
 #apple4 {
-  top: 14%;
-  left: 48%;
+  top: 420px;
+  left: 240px;  
 }
 #apple5 {
-  top: 60%;
-  left: 27%;
-}
-#apple6 {
-  top: 20%;
-  left: 65%;
-}
-#apple7 {
-  top: 28%;
-  left: 44%;
-}
-#apple8 {
-  top: 32%;
-  left: 30%;
-}
-#apple9 {
-  top: 42%;
-  left: 18%;
-}
-#apple10 {
-  top: 57%;
-  left: 40%;
+  top: 310px;
+  left: 210px;
+ 
 }
 #dog {
-  position:fixed;
-  width: auto;
-  top: 50%;
-  left: 69%;
-  height: 38%;  
+  position:absolute;  
+  top: 47%;
+  left: 65%;
+  height: 28%;  
   z-index: 1;
 }
 .bowl {
   position: fixed;
   width: auto;
-  top: 70%;
-  left: 60%;
+  top: 78%;
+  left: 67%;
   z-index: 1;
-
-}
-
-#score_help {
-  position: relative;
-  top: 15%;
-  text-align: center;
-  font-size: 25px;
-  font-family: verdana;
-  
-}
-
-body, html {
-    width: 960;
-    height: 100%;
-}
-div.box {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: orange;
 }
 div.exploding {
     position: absolute;
@@ -116,3 +91,80 @@ div.exploding {
     z-index: 1;
     background-repeat: no-repeat;
 }
+/* tablet/phone styles */
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  #score_help {
+    position: relative;
+    top: 5%;
+    text-align: center;
+    font-size: 30px;
+    font-family: verdana;  
+  }  
+  #cloud {
+    display: none;
+  }
+  .grass {
+   display: none;
+  }  
+  
+  #tree {
+    position: absolute; 
+    left: 5%;
+    top:  35%; 
+    z-index: 1;    
+    width: 275px;
+  }
+  .bowl {
+    position: aboslute;
+    width: 60px;
+    top: 75%;
+    left: 58%;
+    z-index: 1;
+  }
+  #dog {
+    position:absolute;
+    height: 160px;
+    top: 60%;
+    left: 67%;    
+    z-index: 1;
+  }
+  .apple {
+    position:fixed;
+    width: 40px;
+    z-index: 1;
+  }
+  
+  #apple1 {
+   top: 310px;
+   left: 150px;
+  }
+  #apple2 {
+    top: 350px;
+    left: 100px; 
+  }
+  #apple3 {
+   top: 418px;
+   left: 130px;
+  }
+  #apple4 {
+    top: 330px;
+    left: 210px;  
+  }
+  #apple5 {
+    top: 390px;
+    left: 200px;   
+  }
+  .ground {
+    position: absolute;
+    top: 67%;
+    background-color: green;
+    height: 35%; 
+    width: 100%;
+  }
+
+} 
