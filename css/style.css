@@ -80,7 +80,7 @@ h1, h5 {
   position: fixed;
   width: auto;
   top: 78%;
-  left: 67%;
+  left: 60%;
   z-index: 1;
 }
 div.exploding {
@@ -107,19 +107,14 @@ div.exploding {
   }  
   #cloud {
     display: none;
-  }
-  .grass {
-   display: none;
   }  
   
   #tree {
-    display: none;
-    position: absolute; 
-    left: 5%;
-    top:  35%; 
-    z-index: 1;    
-    width: 275px;
+    display: none;    
   }
+  .apple {
+    display: none;    
+  }  
   .bowl {
     position: aboslute;
     width: 60px;
@@ -134,33 +129,12 @@ div.exploding {
     left: 40%;    
     z-index: 1;
   }
-  .apple {
-    display: none;
-    position:fixed;
-    width: 40px;
-    z-index: 1;
+  div.exploding {
+    height: 30px;
+    width: 30px;
+    background: url('../img/bone2.png');
   }
   
-  #apple1 {
-   top: 310px;
-   left: 150px;
-  }
-  #apple2 {
-    top: 350px;
-    left: 100px; 
-  }
-  #apple3 {
-   top: 418px;
-   left: 130px;
-  }
-  #apple4 {
-    top: 330px;
-    left: 210px;  
-  }
-  #apple5 {
-    top: 390px;
-    left: 200px;   
-  }
   .ground {
     position: absolute;
     top: 67%;
@@ -168,5 +142,7 @@ div.exploding {
     height: 35%; 
     width: 100%;
   }
-
+  .grass {
+    display: none;
+   }  
 } 
