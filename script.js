@@ -28,7 +28,7 @@ $(document).ready(function () {
     }); 
   }
   function clkApple() { //upon click triggers to fade hidden apple back into screen after delay
-    $('.apple').delay(7000).fadeIn(2000);
+    $('.apple').delay(500).fadeIn(1000);
     score+=5; //increments score of each apple click by 5
   }  
   function scoreUpdate() {   //upon respective click updates score.
