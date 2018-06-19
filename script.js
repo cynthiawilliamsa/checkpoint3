@@ -12,6 +12,9 @@ $(document).ready(function () {
     clkApple(); //runs function below
     scoreUpdate();      
   });
+  $('#reset').on('click', function() {
+    location.reload();
+  });
 //functions//
   function makeBone() { //calculates random location for bone to appear on click event
     var numRand = Math.floor(Math.random() * 501);
