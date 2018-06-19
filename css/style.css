@@ -135,13 +135,13 @@ div.exploding {
   .bowl {
     position: aboslute;
     width: 60px;
-    top: 75%;
+    top: 85%;
     left: 38%;
     z-index: 1;
   }
   #dog {
     position:absolute;
-    height: 200px;
+    height: 260px;
     top: 50%;
     left: 40%;    
     z-index: 1;
